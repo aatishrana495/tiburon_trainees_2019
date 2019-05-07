@@ -10,6 +10,7 @@
 class Node1{
 public:
     Node1(ros::NodeHandle _nh);
+    void execute(); 
 private:
     ros::NodeHandle nh;
     ros::Publisher chatter_pub1;
