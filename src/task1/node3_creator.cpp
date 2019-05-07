@@ -5,5 +5,6 @@ int main(int argc, char **argv){
     ros::init(argc, argv, "node1_listener_node2_listener");
     ros:: NodeHandle n;
     Node3 node3(n);
+    ros::spin();
     return 0;
 }

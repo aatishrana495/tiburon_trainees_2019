@@ -1,11 +1,10 @@
 #include "tiburon_trainees_2019/task1/node3.h"
 
 
-// contructor for the class Node2
+// contructor for the class Node3
 Node3::Node3(ros::NodeHandle _nh) : nh(_nh){
     sub = nh.subscribe("chatter_1", 1000,&Node3::chatterCallback1,this);
     sub1 = nh.subscribe("chatter_2", 1000,&Node3::chatterCallback2,this);
-    ros::spin();
 
 }
 // end constructor

@@ -6,7 +6,7 @@ Node2::Node2(ros::NodeHandle _nh) : nh(_nh){
     count =0;
     chatter_pub2 = nh.advertise<std_msgs::Int32>("chatter_2", 1000);
     sub = nh.subscribe("chatter_1", 1000,&Node2::chatterCallback,this);
-    ros::spin();
+    
 
 }
 // end constructor
